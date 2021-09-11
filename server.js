@@ -3,7 +3,11 @@ import "./db.js";
 import productsRoute from "./routes/productsRoute.js";
 import userRoute from "./routes/usersRoute.js";
 import orderRoute from "./routes/ordersRoute.js";
-import path from "path";
+import path, { dirname } from "path";
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 
@@ -13,6 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/products", productsRoute);
 app.use("/api/users", userRoute);
 app.use("/api/orders", orderRoute);
+
+console.log(__dirname)
 
 if (process.env.NODE_ENV === "production") {
   app.use("/", express.static("client/build"));
