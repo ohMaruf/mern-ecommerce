@@ -3,7 +3,7 @@ import "./db.js";
 import productsRoute from "./routes/productsRoute.js";
 import userRoute from "./routes/usersRoute.js";
 import orderRoute from "./routes/ordersRoute.js";
-import path from "path";
+const path = require("path");
 
 const app = express();
 
@@ -17,8 +17,8 @@ app.use("/api/orders", orderRoute);
 if (process.env.NODE_ENV === "production") {
   app.use("/", express.static("client/build"));
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"))
-  })
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  });
 }
 
 const port = process.env.PORT || 5000;
