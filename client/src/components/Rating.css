@@ -1,0 +1,35 @@
+.rating-container {
+  width: 125px;
+  height: 41.6px;
+  display: block;
+  unicode-bidi: bidi-override;
+  color: #929292;
+  font-size: 30px;
+  position: relative;
+}
+
+.rating-container .rating-top {
+  width: auto;
+  display: block;
+  color: #ffc414;
+  padding: 0;
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+}
+
+.rating-container .rating-top {
+  pointer-events: none;
+}
+
+.rating-container .rating-bottom {
+  width: auto;
+  z-index: 0;
+  position: absolute;
+}
+
+.rating-container .rating-bottom button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}

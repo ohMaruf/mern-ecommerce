@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Monolisa;
+  src: url("./font/Monolisa.ttf");
+}
+
+:root {
+  --theme-color: #f5f5f5;
+  --theme-bg-color: #2b2866;
+  --bg-color: #efefef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Monolisa", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  min-width: 740px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,169 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  box-shadow: 0 0 2px 0 #727272;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  z-index: 10;
+
+  background-color: var(--theme-bg-color);
+  color: var(--theme-color);
+}
+
+.item {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--theme-color);
+}
+
+.item.right {
+  margin: 0 0 0 auto;
+}
+
+.navbar .logo {
+  font-size: 1.2em;
+  align-items: center;
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  width: auto;
+}
+
+.logo img {
+  max-width: 40px;
+  margin-right: 15px;
+}
+
+.logo {
+  margin: 0 15px;
+}
+
+.item.search {
+  transition: 0.2s linear;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.item.search .search-icon {
+  border-left: 1px solid #727272;
+  margin: 2px;
+  margin-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+  color: rgb(150, 150, 150);
+}
+
+.item.search .search-icon:hover {
+  color: #000;
+}
+
+.item.search input {
+  width: 100%;
+  padding: 6px;
+  padding-left: 10px;
+  outline: none;
+  max-width: 100%;
+  border: 0;
+  font-size: 16px;
+}
+
+.item .search-group {
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid #727272;
+  overflow: hidden;
+  background: #fff;
+
+  border-color: #fff;
+  color: var(--theme-color);
+}
+
+.item .search-group select {
+  margin: 2px;
+  border: 0;
+  border-right: 1px solid #727272;
+  outline: none;
+  color: #000;
+}
+
+.item .group {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.item .search-group button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.material-icons {
+  font-size: 1.8rem;
+  max-height: 40px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.detail {
+  margin-right: 15px;
+}
+
+.sub {
+  text-align: right;
+}
+
+.cart-icon-container {
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+
+.cart-icon-container > .cart-number {
+  position: absolute;
+  left: 53%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 900px) {
+  #category {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 1000px) {
+  #category {
+    width: 5em;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo h4 {
+    display: none;
+  }
+
+  .logo {
+    margin: 0 0 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .detail,
+  .logo .text {
+    display: none;
+  }
+}

@@ -1,0 +1,113 @@
+.form-container {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-form {
+  margin-top: 60px;
+  box-sizing: border-box;
+  justify-self: center;
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease-in-out;
+  align-items: center;
+}
+
+.card-form h1 {
+  margin: 30px;
+}
+
+.form-row {
+  width: 380px;
+  height: 50px;
+  position: relative;
+  border: 3px solid rgba(177, 177, 177, 0.7);
+  border-radius: 5px;
+  margin-top: 12px;
+}
+
+.form-row:focus-within {
+  border-color: #6c63ff;
+}
+
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row input[type="name"] {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+
+.form-row input[type="email"] + label,
+.form-row input[type="password"] + label,
+.form-row input[type="name"] + label {
+  display: block;
+  background-color: #fff;
+  padding: 0 4px 0 4px;
+  position: absolute;
+  font-size: 14px;
+  color: rgba(109, 109, 109, 1);
+  transition: 0.2s ease;
+  pointer-events: none;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+}
+
+.form-row input[type="email"]:focus + label,
+.form-row input[type="password"]:focus + label,
+.form-row input[type="name"]:focus + label,
+.form-row input[type="email"]:not(:placeholder-shown) + label,
+.form-row input[type="name"]:not(:placeholder-shown) + label,
+.form-row input[type="password"]:not(:placeholder-shown) + label {
+  font-size: 12px;
+  margin-top: -24px;
+  color: #4d4d4d;
+}
+
+.btn-submit {
+  margin-top: 25px;
+  width: 100%;
+  height: 54px;
+  padding: 0 30px;
+  border-radius: 7px;
+  background-color: #6c63ff;
+  color: var(--theme-color);
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+}
+
+.form-helper {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #000;
+}
+
+.form-helper a {
+  color: #6c63ff;
+}
+
+.form-error {
+  padding: 8px 4px;
+  width: 380px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}

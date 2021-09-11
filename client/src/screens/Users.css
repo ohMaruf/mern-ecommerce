@@ -1,0 +1,36 @@
+.admin-table-container {
+  width: auto;
+  min-width: min-content;
+  padding: 14px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 14px;
+}
+
+.admin-table-container .admin-table {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  border-collapse: separate;
+}
+
+.admin-table-container .admin-table th {
+  padding: 8px;
+  border-top: none;
+  border-left: 1px solid #ddd;
+}
+
+.admin-table-container .admin-table td {
+  text-align: center;
+  padding: 8px;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+.admin-table-container .admin-table td:first-child,
+.admin-table-container .admin-table th:first-child {
+  border-left: none;
+}

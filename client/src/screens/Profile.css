@@ -1,0 +1,111 @@
+.profile-card {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-user {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.profile-user #logout {
+    justify-self: end;
+    width: min-content;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 0 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.profile-card .premium-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  margin-bottom: 20px;
+  margin-left: 6px;
+}
+
+.profile-card .premium-header * {
+  height: fit-content;
+  max-height: 70px;
+}
+
+.profile-card .premium-header > div {
+  display: inline-flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.profile-card .premium-header > div > h1 {
+  margin-left: 14px;
+}
+
+.profile-card #premium-button {
+  height: 50px;
+  background-color: #6b63ff;
+  border: none;
+  border-radius: 10px;
+  margin-right: 5px;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profile-card span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.profile-card ul {
+  margin-top: 4px;
+  margin-left: 24px;
+  font-size: 14px;
+}
+
+.profile-orders {
+  padding: 10px;
+}
+
+.order-error {
+  padding: 8px;
+  width: 100%;
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.obapremium-message {
+  display: flex;
+  font-size: 16px;
+  color: #155724;
+  background-color: #d4edda;
+  border-radius: 4px;
+  border: 1px solid #c3e6cb;
+  text-align: center;
+  padding: 5px 8px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.obamium-message {
+  display: flex;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  border: 1px solid #f5c6cb;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}

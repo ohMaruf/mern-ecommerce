@@ -1,0 +1,72 @@
+.admin-container main {
+  width: 100%;
+}
+
+.admin-title {
+  margin: 14px 0 0 14px;
+}
+
+.admin-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin-container aside nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #6b63ff;
+  border-radius: 14px;
+  margin-right: 10px;
+  margin-top: 72px;
+}
+
+.admin-container aside nav > a {
+  width: 56px;
+  height: 56px;
+  color: white;
+  padding: 8px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-container aside nav > a > i,
+.admin-container aside nav > a > i > svg {
+  height: 32px;
+}
+
+.admin-success {
+  display: block;
+  color: #155724;
+  background-color: #d4edda;
+  border-radius: 4px;
+  border: 1px solid #c3e6cb;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 0 0 10px 0;
+}
+
+.admin-error {
+  display: block;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  border: 1px solid #f5c6cb;
+  text-align: center;
+  padding: 5px 8px;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.admin-action {
+  background-color: transparent;
+  border: none;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.admin-action:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
