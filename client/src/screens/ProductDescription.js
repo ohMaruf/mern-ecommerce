@@ -46,7 +46,7 @@ export default function ProductDescription({ match }) {
                 <h2>{`${product.name}`.toLowerCase()}</h2>
               </article>
               <article className="card" id="orderInfo">
-                <b>&euro;{product.price}</b>
+                <b>&euro;{product.price.toFixed(2)}</b>
                 <select
                   defaultValue={quantity || 0}
                   onChange={(e) => setQuantity(e.target.value)}
